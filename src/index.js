@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", main);
 
 function main() {
-    fetch("http://localhost:3000/characters")
+    fetch("https://fluttercuties-db.vercel.app/characters")
         .then(function (response) {
             return response.json();
         })

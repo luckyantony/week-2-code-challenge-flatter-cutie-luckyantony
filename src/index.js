@@ -39,14 +39,21 @@ function main() {
         const voteCount = document.getElementById("vote-count");
         const votesInput = document.getElementById("votes");
 
-        const currentVotes = voteCount.textContent;
-        const newVotes = votesInput.value;
-
-        // This updates the vote count
-        voteCount.textContent = +currentVotes + +newVotes;
-
-        // Clear input
-        votesInput.value = "";
+        fetch(`https://fluttercuties-db.vercel.app/characters/${currentCharacterId}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                votes: +voteCount.textContent + +votesInput.value
+            })
+        })
+        .then(res => res.json())
+        .then(updatedCharacter => {
+            voteCount.textContent = updatedCharacter.votes;
+            votesInput.value = "";
+        })
+        .catch(error => console.error("Error updating votes:", error));
     });
 
     // This is for the reset button click event
@@ -65,6 +72,6 @@ function showCharacterDetails(character) {
     const voteCount = document.getElementById("vote-count");
 
     name.textContent = character.name;
-    image.src = character.image; // Fixed typo: `Image` -> `image`
+    image.src = character.image; 
     voteCount.textContent = character.votes;
 }

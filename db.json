@@ -1,34 +1,3 @@
 {
-  "characters": [
-    {
-      "id": 1,
-      "name": "Mr. Cute",
-      "image": "https://media.giphy.com/media/Nf5FCBnN2TCAE/giphy.gif?cid=790b7611zkwnl43xm2v7klln00fxa9iiem7wcuymbvcmhzl1&ep=v1_gifs_search&rid=giphy.gif&ct=g",
-      "votes": 0
-    },
-    {
-      "id": 2,
-      "name": "Mx. Monkey",
-      "image": "https://media.giphy.com/media/JTYUD43Z6zCJq/giphy.gif?cid=ecf05e47x8r5grzy38tue0534ccztiaa3b8n6t4tsdye9hl2&ep=v1_gifs_search&rid=giphy.gif&ct=g",
-      "votes": 0
-    },
-    {
-      "id": 3,
-      "name": "Ms. Zebra",
-      "image": "https://media2.giphy.com/media/20G9uNqE3K4dRjCppA/source.gif",
-      "votes": 0
-    },
-    {
-      "id": 4,
-      "name": "Dr. Lion",
-      "image": "http://bestanimations.com/Animals/Mammals/Cats/Lions/animated-lion-gif-11.gif",
-      "votes": 0
-    },
-    {
-      "id": 5,
-      "name": "Mme. Panda",
-      "image": "https://media.giphy.com/media/ALalVMOVR8Qw/giphy.gif",
-      "votes": 0
-    }
-  ]
+  "notes": []
 }
